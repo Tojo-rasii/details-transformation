@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Details trandformation</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/mobile/responsive-mobile.css">
+    <link rel="stylesheet" href="style/desktop/responsive-desktop.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <nav id="navTransformation">
+            <section>
+                <!-- Logo -->
+                <article>
+                    <img src="Asset/logo.png" alt="Logo">
+                </article>
+
+                <article>
+                    <picture>
+                        <button class="btn-ctp">
+                            Publier tes transformations
+                        </button>
+                        <i class="bell">
+                            <svg width="22" height="22" viewBox="0 0 18 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.74925 0C8.05785 0 7.49925 0.558594 7.49925 1.25V2C4.64769 2.57812 2.49925 5.10156 2.49925 8.125V8.85938C2.49925 10.6953 1.82347 12.4688 0.604721 13.8438L0.315659 14.168C-0.0124665 14.5352 -0.0905915 15.0625 0.108627 15.5117C0.307846 15.9609 0.757065 16.25 1.24925 16.25H16.2493C16.7414 16.25 17.1868 15.9609 17.3899 15.5117C17.593 15.0625 17.511 14.5352 17.1828 14.168L16.8938 13.8438C15.675 12.4688 14.9993 10.6992 14.9993 8.85938V8.125C14.9993 5.10156 12.8508 2.57812 9.99925 2V1.25C9.99925 0.558594 9.44066 0 8.74925 0ZM10.5188 19.2695C10.9875 18.8008 11.2493 18.1641 11.2493 17.5H8.74925H6.24925C6.24925 18.1641 6.51097 18.8008 6.97972 19.2695C7.44847 19.7383 8.08519 20 8.74925 20C9.41331 20 10.05 19.7383 10.5188 19.2695Z"
+                                    fill="black" />
+                            </svg>
+                            <span id="spanNotif">4</span>
+                        </i>
+                        <i class="chat">
+                            <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.50011 0C1.12114 0 0 1.12114 0 2.50011V13.7506C0 15.1296 1.12114 16.2507 2.50011 16.2507H6.25027V19.3758C6.25027 19.6141 6.38309 19.829 6.59403 19.9345C6.80498 20.0399 7.0589 20.0165 7.25031 19.8759L12.0826 16.2507H17.5008C18.8797 16.2507 20.0009 15.1296 20.0009 13.7506V2.50011C20.0009 1.12114 18.8797 0 17.5008 0H2.50011Z"
+                                    fill="black" />
+                            </svg>
+                        </i>
+                        <i class="heart">
+                            <svg width="22" height="22" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.17426 11.7963L10.4283 19.5021C10.7708 19.8219 11.223 20 11.6935 20C12.164 20 12.6162 19.8219 12.9588 19.5021L21.2128 11.7963C22.6014 10.5036 23.3871 8.69017 23.3871 6.79454V6.52961C23.3871 3.33673 21.0803 0.614326 17.9331 0.0890309C15.8502 -0.258121 13.7308 0.422479 12.2417 1.91158L11.6935 2.45971L11.1454 1.91158C9.65629 0.422479 7.53684 -0.258121 5.45393 0.0890309C2.30673 0.614326 0 3.33673 0 6.52961V6.79454C0 8.69017 0.785659 10.5036 2.17426 11.7963Z"
+                                    fill="black" />
+                            </svg>
+
+                        </i>
+
+                        <div id="Profile">
+                            <label for="toggle">
+                                <img src="Asset/profile.png" alt="">
+                                <input type="checkbox" id="toggle"></label>
+                            <figure id="pop-show">
+                                <div>
+                                    <p>
+                                        <span>
+                                            <i class="bi-person-fill"></i>
+                                        </span>
+                                        <span>Mon profile</span>
+                                    </p>
+                                    <p>
+                                        <span><i class="bi-speedometer2"></i></span>
+
+                                        <span>Tableau de bord</span>
+                                    </p>
+                                    <p>
+                                        <span>
+                                            <i class="bi-file-earmark-text-fill"></i>
+                                        </span>
+                                        <span>Mes candidatures</span>
+                                    </p>
+                                    <p>
+                                        <span>
+                                            <i class="bi-bell-fill"></i>
+                                        </span>
+                                        <span>Mes notifications</span>
+                                    </p>
+                                    <p>
+                                        <span>
+                                            <i class="bi-person-fill-gear"></i>
+                                        </span>
+                                        <span>Gerer Multiprofile</span>
+                                    </p>
+                                    <p>
+                                        <span>
+                                            <i class="bi-box-arrow-right"></i>
+                                        </span>
+                                        <span>Se deconnecter</span>
+                                    </p>
+                                </div>
+                            </figure>
+                        </div>
+
+
+                    </picture>
+                </article>
+            </section>
+        </nav>
+
+        <nav id="navTransformationMobile">
+            <section>
+                <!-- Logo -->
+                <article>
+                    <img src="Asset/logo.png" alt="Logo" id="logo">
+                </article>
+
+                <article>
+                    <svg width="27" height="27" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 3.5C0 1.56406 1.34062 0 3 0H39C40.6594 0 42 1.56406 42 3.5C42 5.43594 40.6594 7 39 7H3C1.34062 7 0 5.43594 0 3.5ZM0 21C0 19.0641 1.34062 17.5 3 17.5H39C40.6594 17.5 42 19.0641 42 21C42 22.9359 40.6594 24.5 39 24.5H3C1.34062 24.5 0 22.9359 0 21ZM42 38.5C42 40.4359 40.6594 42 39 42H3C1.34062 42 0 40.4359 0 38.5C0 36.5641 1.34062 35 3 35H39C40.6594 35 42 36.5641 42 38.5Z"
+                            fill="#474747" />
+                    </svg>
+
+                </article>
+            </section>
+        </nav>
+
+
+        <main>
+            <div id="section-main">
+            <section id="section-retour">
+                <article>
+                    <i>
+                        <svg width="18" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.41855 8.41576C-0.139518 8.97383 -0.139518 9.88013 0.41855 10.4382L7.56181 17.5815C8.11987 18.1395 9.02617 18.1395 9.58424 17.5815C10.1423 17.0234 10.1423 16.1171 9.58424 15.559L4.87416 10.8534L18.5713 10.8534C19.3616 10.8534 20 10.215 20 9.42475C20 8.63452 19.3616 7.99609 18.5713 7.99609L4.87862 7.9961L9.57978 3.29048C10.1378 2.73241 10.1378 1.82611 9.57978 1.26804C9.02171 0.709973 8.11541 0.709973 7.55734 1.26804L0.414085 8.4113L0.41855 8.41576Z" fill="black"/>
+                            </svg>
+                            
+                    </i>
+                    <p>Revenir à la page d'accueil</p>
+                </article>
+            </section> 
+
+            
+            <section id="section-columns">
+                <div id="column1">
+
+                <article id="title-head">
+                    <!-- title -->
+                   <picture id="picture-text">
+                    <p>Avant et après traitement de l’acné</p>
+                    <p>Cosmétique / Visage</p>
+                    <sub>publiée le Ven. 11 Oct. 2024 </sub>
+                   </picture>
+
+                   <picture id="figure-title">
+                    <div>
+                    <figure id="figure-located">
+                        <p>
+                            <span class="bold-x fs-1">95 €</span>
+                            <span class="bi-geo-alt-fill">&nbsp;&nbsp;30 Rue, Marseille</span>
+                        </p>
+                    </figure>
+                       <figure>
+                        <i class="heart">
+                            <svg width="55" height="55" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_0_1)">
+                                <rect x="4" y="2" width="60" height="60" rx="8" fill="white"/>
+                                </g>
+                                <path d="M31.524 47.1292L31.3411 46.9608L18.52 35.0545C16.2733 32.9688 15 30.0416 15 26.9754V26.7339C15 21.582 18.659 17.162 23.723 16.196C26.6063 15.6398 29.5555 16.3058 31.9046 17.9596C32.5632 18.428 33.1779 18.9695 33.7341 19.5915C34.0414 19.2403 34.3707 18.9183 34.722 18.6183C34.9928 18.3841 35.2708 18.1645 35.5636 17.9596C37.9126 16.3058 40.8618 15.6398 43.7451 16.1887C48.8091 17.1547 52.4681 21.582 52.4681 26.7339V26.9754C52.4681 30.0416 51.1948 32.9688 48.9482 35.0545L36.127 46.9608L35.9441 47.1292C35.344 47.6853 34.5537 48 33.7341 48C32.9144 48 32.1241 47.6926 31.524 47.1292ZM32.4973 23.4774C32.4681 23.4554 32.4461 23.4262 32.4241 23.3969L31.1215 21.9333L31.1142 21.926C29.4238 20.0306 26.8698 19.1671 24.3817 19.6428C20.9715 20.2941 18.5126 23.2652 18.5126 26.7339V26.9754C18.5126 29.061 19.3835 31.0588 20.9129 32.4785L33.7341 44.3849L46.5552 32.4785C48.0846 31.0588 48.9555 29.061 48.9555 26.9754V26.7339C48.9555 23.2725 46.4966 20.2941 43.0938 19.6428C40.6057 19.1671 38.0444 20.0379 36.3612 21.926C36.3612 21.926 36.3612 21.926 36.3539 21.9333C36.3466 21.9406 36.3539 21.9333 36.3466 21.9406L35.044 23.4042C35.022 23.4335 34.9928 23.4555 34.9708 23.4847C34.6415 23.814 34.1951 23.997 33.7341 23.997C33.273 23.997 32.8266 23.814 32.4973 23.4847V23.4774Z" fill="#027580"/>
+                                <defs>
+                                <filter id="filter0_d_0_1" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="2"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </i>            
+                             
+                       </figure>
+
+
+                       <figure id="voir-plus">
+                      
+                        <i>
+                            <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.856 0C9.24888 0 6.36049 1.64286 4.25781 3.59821C2.16853 5.53571 0.771205 7.85714 0.110491 9.45089C-0.0368304 9.80357 -0.0368304 10.1964 0.110491 10.5491C0.771205 12.1429 2.16853 14.4643 4.25781 16.4018C6.36049 18.3571 9.24888 20 12.856 20C16.4632 20 19.3516 18.3571 21.4542 16.4018C23.5435 14.4598 24.9408 12.1429 25.606 10.5491C25.7533 10.1964 25.7533 9.80357 25.606 9.45089C24.9408 7.85714 23.5435 5.53571 21.4542 3.59821C19.3516 1.64286 16.4632 0 12.856 0ZM6.42746 10C6.42746 8.29504 7.10475 6.6599 8.31034 5.45431C9.51593 4.24872 11.1511 3.57143 12.856 3.57143C14.561 3.57143 16.1961 4.24872 17.4017 5.45431C18.6073 6.6599 19.2846 8.29504 19.2846 10C19.2846 11.705 18.6073 13.3401 17.4017 14.5457C16.1961 15.7513 14.561 16.4286 12.856 16.4286C11.1511 16.4286 9.51593 15.7513 8.31034 14.5457C7.10475 13.3401 6.42746 11.705 6.42746 10ZM12.856 7.14286C12.856 8.71875 11.5748 10 9.99888 10C9.68192 10 9.37835 9.94643 9.09263 9.85268C8.8471 9.77232 8.56138 9.92411 8.57031 10.183C8.5837 10.4911 8.62835 10.7991 8.71317 11.1071C9.32478 13.3929 11.6775 14.75 13.9632 14.1384C16.2489 13.5268 17.606 11.1741 16.9944 8.88839C16.4989 7.03571 14.8605 5.79018 13.0391 5.71429C12.7801 5.70536 12.6283 5.98661 12.7087 6.23661C12.8025 6.52232 12.856 6.82589 12.856 7.14286Z" fill="black"/>
+                                </svg>
+                                
+                        </i>
+                        <p>voir les photos</p>
+                       </figure>
+                    </div>    
+                   </picture>
+
+                </article>
+
+
+                       <!-- fig-img -->
+                <article id="article-img1">
+                  <picture>
+                    <div>
+                        <img src="Asset/before.png" id="before-img" alt="">
+                        <img src="Asset/after.png"id="after-img" alt="">
+                        <img src="Asset/img-before.png" class="slideImg" alt="">
+                        <img src="Asset/img-after.png" class="slideImg last" alt="">
+
+                        <p id="mois" class="bi-clock">&nbsp;&nbsp;&nbsp;8 mois</p>
+                    </div>
+                                   </picture>
+
+
+
+
+                    <figure id="figure-located2">
+                        <picture id="rate2">
+                        <p>
+                            <span class="bold-x fs-1">95 €</span>
+                            <span class="bi-geo-alt-fill">&nbsp;&nbsp;30 Rue, Marseille</span>
+                        </p>    
+                        <p id="star-rate">
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                        </p>
+                        </picture>
+                        
+
+                        <picture id="partage-commentaire"> 
+                            <i>
+                                <svg width="26" height="22" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3394 0.148956C15.2938 -0.434736 13.1572 0.748712 12.5735 2.79431L12.2682 3.86531C12.0701 4.56145 11.7113 5.20405 11.224 5.73955L8.47692 8.75975C8.00033 9.28454 8.03781 10.0985 8.5626 10.5751C9.08739 11.0517 9.90134 11.0142 10.3779 10.4894L13.125 7.4692C13.8801 6.63918 14.4317 5.64851 14.7369 4.57216L15.0421 3.50117C15.2349 2.82109 15.9471 2.42482 16.6325 2.6176C17.318 2.81038 17.7089 3.52259 17.5161 4.20802L17.2109 5.27902C16.9056 6.34466 16.4237 7.35139 15.7865 8.25103C15.508 8.64194 15.4759 9.15602 15.6954 9.58442C15.915 10.0128 16.3541 10.2806 16.836 10.2806H23.9903C24.4615 10.2806 24.8471 10.6661 24.8471 11.1374C24.8471 11.5015 24.6168 11.8174 24.2902 11.9406C23.8939 12.0905 23.594 12.4226 23.4923 12.8349C23.3905 13.2472 23.4976 13.681 23.7761 13.9969C23.9099 14.1469 23.9903 14.345 23.9903 14.5645C23.9903 14.9822 23.6904 15.3303 23.2941 15.4053C22.855 15.491 22.4855 15.7962 22.3302 16.2192C22.1749 16.6423 22.2446 17.1135 22.523 17.4669C22.6355 17.6115 22.7051 17.7936 22.7051 17.9971C22.7051 18.3559 22.4802 18.6718 22.1589 18.795C21.5431 19.0359 21.211 19.7 21.3878 20.3372C21.4092 20.4068 21.4199 20.4871 21.4199 20.5675C21.4199 21.0387 21.0343 21.4243 20.5631 21.4243H15.342C14.6673 21.4243 14.0033 21.2261 13.441 20.8513L10.137 18.6504C9.54791 18.2541 8.75002 18.4148 8.35376 19.0092C7.95749 19.6036 8.11814 20.3961 8.71254 20.7924L12.0166 22.9933C13.0019 23.6519 14.1585 24 15.342 24H20.5631C22.4213 24 23.9314 22.522 23.9903 20.6799C24.7721 20.0534 25.2755 19.0895 25.2755 18.0024C25.2755 17.7615 25.2487 17.5312 25.2059 17.3063C26.0305 16.6798 26.5607 15.6891 26.5607 14.5752C26.5607 14.2272 26.5071 13.8898 26.4107 13.5739C27.0319 12.942 27.4175 12.0852 27.4175 11.1374C27.4175 9.24705 25.8859 7.71018 23.9903 7.71018H19.0476C19.2993 7.15326 19.5135 6.57492 19.6795 5.98588L19.9848 4.91488C20.5684 2.86928 19.385 0.732648 17.3394 0.148956ZM1.71359 8.56697C0.765761 8.56697 0 9.33273 0 10.2806V22.2757C0 23.2235 0.765761 23.9893 1.71359 23.9893H5.14077C6.0886 23.9893 6.85436 23.2235 6.85436 22.2757V10.2806C6.85436 9.33273 6.0886 8.56697 5.14077 8.56697H1.71359Z" fill="black"/>
+                                    </svg>     
+                            <p>1,7k</p>
+
+                            </i>
+  <i>
+                                <svg width="26" height="22" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.04438 19.2439C7.73529 18.7405 8.62974 18.6119 9.43313 18.9011C10.8525 19.4153 12.4432 19.7099 14.1357 19.7099C20.8145 19.7099 25.276 15.3983 25.276 11.1404C25.276 6.88239 20.8145 2.57085 14.1357 2.57085C7.45678 2.57085 2.99528 6.88239 2.99528 11.1404C2.99528 12.8543 3.65942 14.5039 4.90735 15.9179C5.36796 16.4374 5.59291 17.123 5.53935 17.8192C5.46437 18.7887 5.23407 19.6777 4.93413 20.4651C5.84464 20.042 6.59983 19.5706 7.04438 19.2493V19.2439ZM1.55989 21.4184C1.65629 21.2738 1.74734 21.1292 1.83304 20.9846C2.36863 20.0955 2.87745 18.9279 2.97921 17.6157C1.37243 15.7893 0.424425 13.5559 0.424425 11.1404C0.424425 4.98639 6.56234 0 14.1357 0C21.709 0 27.8469 4.98639 27.8469 11.1404C27.8469 17.2944 21.709 22.2807 14.1357 22.2807C12.1486 22.2807 10.2633 21.938 8.56011 21.322C7.92275 21.788 6.8837 22.4254 5.65183 22.9609C4.84308 23.3144 3.92186 23.6358 2.9685 23.8233C2.92565 23.834 2.8828 23.8393 2.83996 23.85C2.6043 23.8929 2.37399 23.9304 2.13297 23.9518C2.12226 23.9518 2.10619 23.9572 2.09548 23.9572C1.82233 23.9839 1.54917 24 1.27602 24C0.927884 24 0.617239 23.7911 0.48334 23.4698C0.349441 23.1484 0.424425 22.7842 0.665442 22.5378C0.885036 22.3129 1.08321 22.0719 1.27066 21.8148C1.36172 21.6916 1.44741 21.5684 1.52775 21.4452L1.54382 21.4184H1.55989Z" fill="black"/>
+                                    </svg>
+                                    
+                                    <p>1k</p>
+                            </i>
+                            <i>
+                                <svg width="26" height="22" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.7996 1.29375L17.7996 1.29378L17.8079 1.29005C17.9707 1.21642 18.1624 1.2456 18.2972 1.3675L18.2994 1.36946L26.8705 9.0834L26.872 9.08476C26.9698 9.17251 27.0245 9.29393 27.0245 9.42923C27.0245 9.55559 26.9709 9.68265 26.8671 9.77812C26.8664 9.77871 26.8658 9.77929 26.8651 9.77987L18.3027 17.486C18.3024 17.4864 18.302 17.4867 18.3016 17.487C18.1662 17.6073 17.9719 17.6404 17.796 17.5631C17.6336 17.4917 17.525 17.328 17.525 17.1432V13.7147V12.4647H16.275H11.1324C7.60291 12.4647 4.73979 15.3279 4.73979 18.8574C4.73979 20.2699 5.16224 21.3049 5.65719 22.0293C4.20865 20.8908 2.09717 18.551 2.09717 14.5719C2.09717 10.0553 5.75876 6.39371 10.2753 6.39371H16.275H17.525V5.14371V1.71529C17.525 1.53559 17.6346 1.36691 17.7996 1.29375Z" stroke="black" stroke-width="2.5"/>
+                                    </svg>
+                                    
+                                <p>235</p>
+                            </i>
+                            
+                          
+                        </picture>
+                    </figure>
+                </article>
+
+                <article id="details-produit-mobile">
+                    <div>
+                    <picture class="title-produit">
+                        <p class="bold">Détails des produits</p>
+                    </picture>
+                    <picture class="picture-produit">
+                        <p>Crème contre l’acné</p>
+                        <p><span class="bold-x">Prix :</span> 90€</p>
+                        <p class="bi-link-45deg">voir plus</p>
+                    </picture>
+                    <picture class="picture-produit">
+                        <p>Crème anti cerne</p>
+                        <p><span class="bold-x">Prix :</span> 5€</p>
+                        <p class="bi-link-45deg">voir plus</p>
+                    </picture>
+                </div>
+                </article>
+             
+
+                <article id="article-texte">
+                 <picture>
+                    <p class="bold-x">Étapes de la transformation</p>
+                    <p>
+                        <span>Ma peau était dans un état assez compliqué. Beaucoup de boutons rouges sur les joues et le front, et des cicatrices qui ne partaient pas. J’étais un peu désespérée.</span> 
+
+                        <span>Je suis allée voir un dermatologue qui m'a conseillé quelques produits : une crème spéciale contre l’acné, un nettoyant doux et un antibiotique à prendre pendant quelques semaines. Au début, ma peau a réagi, ça a même empiré avant de s'améliorer.</span>
+                        
+                        <span>Après environ trois mois, j’ai vu une vraie différence. Moins de boutons, ma peau était plus lisse, même si les cicatrices étaient encore visibles. J’ai dû m’accrocher au traitement.</span>
+                        
+                        <span>J’ai fait un rendez-vous de suivi, et on a ajouté un soin pour atténuer les cicatrices. J’ai arrêté l'antibiotique, mais j’ai continué à bien hydrater et protéger ma peau du soleil.</span>
+                        
+                        <span>Huit mois plus tard, ma peau n’a plus rien à voir ! Presque plus de boutons et mes cicatrices se sont bien estompées. Je suis tellement contente du résultat.</span></p>
+                    <p>voir plus</p>
+                 </picture>
+                </article>
+            </div>
+
+            <div id="column2">
+                <article id="details-profile">
+                    
+                    <figure id="profile-star">
+                        <picture id="picture-image-star">
+                            <img src="Asset/profile-star.png" id="profile-img" alt="">
+                            <img src="Asset/pro.png" id="pro-img" alt="">
+                            
+                                
+                        </picture>
+                        <picture id="picture-info-star">
+                            <p>Camille Lelouche</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p id="star-rate">
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                                <i class="bi-star-fill"></i>
+                            </p>
+                        </picture>
+                    </figure>
+
+                    <figure id="profile-details">
+<picture>
+<p><span class="bold-x">Profession : </span>Makeup Artiste Pro</p>
+<p>SIREN 9174434478</p>
+<p>
+    <span class="bi-geo-alt-fill">&nbsp;&nbsp;&nbsp;30 Rue, Marseille</span>
+    <span class="bi-record-circle">&nbsp;&nbsp;&nbsp;Actif depuis le 23/01/2024</span>
+</p>
+</picture>
+
+
+<picture id="picture-profile-svg">
+<div>
+    <i>
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="58" height="58" rx="15" fill="#F5F5F5" stroke="black" stroke-width="2"/>
+            <path d="M20.75 25C20.75 23.6739 21.2768 22.4021 22.2145 21.4645C23.1521 20.5268 24.4239 20 25.75 20C27.0761 20 28.3479 20.5268 29.2855 21.4645C30.2232 22.4021 30.75 23.6739 30.75 25C30.75 26.3261 30.2232 27.5979 29.2855 28.5355C28.3479 29.4732 27.0761 30 25.75 30C24.4239 30 23.1521 29.4732 22.2145 28.5355C21.2768 27.5979 20.75 26.3261 20.75 25ZM17 38.8398C17 34.9922 20.1172 31.875 23.9648 31.875H27.5352C31.3828 31.875 34.5 34.9922 34.5 38.8398C34.5 39.4805 33.9805 40 33.3398 40H18.1602C17.5195 40 17 39.4805 17 38.8398ZM36.6875 32.1875V29.6875H34.1875C33.668 29.6875 33.25 29.2695 33.25 28.75C33.25 28.2305 33.668 27.8125 34.1875 27.8125H36.6875V25.3125C36.6875 24.793 37.1055 24.375 37.625 24.375C38.1445 24.375 38.5625 24.793 38.5625 25.3125V27.8125H41.0625C41.582 27.8125 42 28.2305 42 28.75C42 29.2695 41.582 29.6875 41.0625 29.6875H38.5625V32.1875C38.5625 32.707 38.1445 33.125 37.625 33.125C37.1055 33.125 36.6875 32.707 36.6875 32.1875Z" fill="black"/>
+            </svg>
+            
+            
+    </i>
+    <p>Suivre</p>
+</div> 
+   <div>
+    <i>
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="58" height="58" rx="15" fill="#F5F5F5" stroke="black" stroke-width="2"/>
+            <path d="M22.5001 20C21.1211 20 20 21.1211 20 22.5001V33.7506C20 35.1296 21.1211 36.2507 22.5001 36.2507H26.2503V39.3758C26.2503 39.6141 26.3831 39.829 26.594 39.9345C26.805 40.0399 27.0589 40.0165 27.2503 39.8759L32.0826 36.2507H37.5008C38.8797 36.2507 40.0009 35.1296 40.0009 33.7506V22.5001C40.0009 21.1211 38.8797 20 37.5008 20H22.5001Z" fill="black"/>
+            </svg>
+            
+
+            
+    </i>
+    <p>Envoyer un message</p>
+</div>
+<div>
+    <i>
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="58" height="58" rx="15" fill="#F5F5F5" stroke="black" stroke-width="2"/>
+            <path d="M24 22.5C24 21.1187 22.8812 20 21.5 20H18.5C17.1187 20 16 21.1187 16 22.5V25.5C16 26.8812 17.1187 28 18.5 28H21.5C22.8812 28 24 26.8812 24 25.5V22.5ZM24 34.5C24 33.1187 22.8812 32 21.5 32H18.5C17.1187 32 16 33.1187 16 34.5V37.5C16 38.8813 17.1187 40 18.5 40H21.5C22.8812 40 24 38.8813 24 37.5V34.5ZM26 22.5V25.5C26 26.8812 27.1187 28 28.5 28H31.5C32.8813 28 34 26.8812 34 25.5V22.5C34 21.1187 32.8813 20 31.5 20H28.5C27.1187 20 26 21.1187 26 22.5ZM34 34.5C34 33.1187 32.8813 32 31.5 32H28.5C27.1187 32 26 33.1187 26 34.5V37.5C26 38.8813 27.1187 40 28.5 40H31.5C32.8813 40 34 38.8813 34 37.5V34.5ZM36 22.5V25.5C36 26.8812 37.1187 28 38.5 28H41.5C42.8813 28 44 26.8812 44 25.5V22.5C44 21.1187 42.8813 20 41.5 20H38.5C37.1187 20 36 21.1187 36 22.5ZM44 34.5C44 33.1187 42.8813 32 41.5 32H38.5C37.1187 32 36 33.1187 36 34.5V37.5C36 38.8813 37.1187 40 38.5 40H41.5C42.8813 40 44 38.8813 44 37.5V34.5Z" fill="black"/>
+            </svg>
+            
+
+            
+    </i>
+    <p>Services</p>
+</div>
+
+<div>
+    <i>
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="58" height="58" rx="15" fill="#F5F5F5" stroke="black" stroke-width="2"/>
+            <path d="M32.5 20C31.8086 20 31.25 20.5586 31.25 21.25C31.25 21.9414 31.8086 22.5 32.5 22.5H35.7305L27.8672 30.3672C27.3789 30.8555 27.3789 31.6484 27.8672 32.1367C28.3555 32.625 29.1484 32.625 29.6367 32.1367L37.5 24.2695V27.5C37.5 28.1914 38.0586 28.75 38.75 28.75C39.4414 28.75 40 28.1914 40 27.5V21.25C40 20.5586 39.4414 20 38.75 20H32.5ZM23.125 21.25C21.3984 21.25 20 22.6484 20 24.375V36.875C20 38.6016 21.3984 40 23.125 40H35.625C37.3516 40 38.75 38.6016 38.75 36.875V32.5C38.75 31.8086 38.1914 31.25 37.5 31.25C36.8086 31.25 36.25 31.8086 36.25 32.5V36.875C36.25 37.2188 35.9688 37.5 35.625 37.5H23.125C22.7812 37.5 22.5 37.2188 22.5 36.875V24.375C22.5 24.0312 22.7812 23.75 23.125 23.75H27.5C28.1914 23.75 28.75 23.1914 28.75 22.5C28.75 21.8086 28.1914 21.25 27.5 21.25H23.125Z" fill="black"/>
+            </svg>
+            
+
+            
+    </i>
+    <p>Visiter notre site internet</p>
+</div>
+</picture>
+
+
+<picture>
+<button class="btn-ctp-profile">Voir le profile</button>
+</picture>
+                    </figure>
+              
+            </article>
+
+            <article id="details-produit">
+                <picture class="title-produit">
+                    <p class="bold">Détails des produits</p>
+                </picture>
+                <picture class="picture-produit">
+                    <p>Crème contre l’acné</p>
+                    <p><span class="bold-x">Prix :</span> 90€</p>
+                    <p class="bi-link-45deg">voir plus</p>
+                </picture>
+                <picture class="picture-produit">
+                    <p>Crème anti cerne</p>
+                    <p><span class="bold-x">Prix :</span> 5€</p>
+                    <p class="bi-link-45deg">voir plus</p>
+                </picture>
+              
+            </article>
+         
+
+            <article id="maps">
+<picture>
+    <img src="Asset/maps.png" alt="">
+    <svg width="186" height="237" viewBox="0 0 186 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.3" d="M99.0027 232.885L6.48916 155.102C1.16318 150.624 -0.658033 143.218 1.98409 136.78L32.4107 62.6501L61.5647 8.95528C64.3638 3.80001 69.7596 0.589844 75.6258 0.589844L150.126 0.589844C158.388 0.589844 165.292 6.88115 166.057 15.1081L185.035 219.157C185.907 228.538 178.525 236.639 169.103 236.639H109.299C105.532 236.639 101.886 235.31 99.0027 232.885Z" fill="#EE7563"/>
+        </svg>
+        
+</picture>
+            </article>
+
+            </div>
+            </section>
+
+
+
+            <!-- paginnation -->
+           
+            <section id="paginnation">
+                <article id="title-section2">
+                    <div>
+                        <picture class="title-produit">
+                            <p class="bold">Transformations similaires</p>
+                        </picture>
+                    
+                    <picture id="btn-suggestion">
+                        <button class="btn-ctp-profile">Voir plus de suggestion <i class="bi-arrow-right"></i></button>
+                    </picture>
+                </div>
+                </article>
+                <article>
+                    <picture>
+
+                        <i class="bi-arrow-left"></i>
+                    </picture>
+                    <ul>
+                        <li>
+                            <picture>
+                                <img src="Asset/profile1-pag.png" alt="">
+                                <p>Georges Dupont</p>
+                            </picture>
+                            <img src="Asset/paginnation.png" alt="">
+                            <i class="bi-heart heart"></i>
+                            <p>Changement de look faite par XHair</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>
+                                <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.725807 0.467285C0.324345 0.467285 0 0.802441 0 1.21729C0 1.63213 0.324345 1.96729 0.725807 1.96729V2.2251C0.725807 3.21885 1.10912 4.17275 1.78957 4.87588L3.32737 6.46729L1.78957 8.05869C1.10912 8.76182 0.725807 9.71572 0.725807 10.7095V10.9673C0.324345 10.9673 0 11.3024 0 11.7173C0 12.1321 0.324345 12.4673 0.725807 12.4673H1.45161H7.25807H7.98387C8.38533 12.4673 8.70968 12.1321 8.70968 11.7173C8.70968 11.3024 8.38533 10.9673 7.98387 10.9673V10.7095C7.98387 9.71572 7.60056 8.76182 6.92011 8.05869L5.38231 6.46729L6.92238 4.87588C7.60282 4.17275 7.98614 3.21885 7.98614 2.2251V1.96729C8.3876 1.96729 8.71195 1.63213 8.71195 1.21729C8.71195 0.802441 8.3876 0.467285 7.98614 0.467285H7.25807H1.45161H0.725807ZM2.17742 2.2251V1.96729H6.53226V2.2251C6.53226 2.82275 6.30318 3.39463 5.89491 3.8165L4.35484 5.40557L2.81477 3.81416C2.4065 3.39463 2.17742 2.82041 2.17742 2.2251Z"
+                                            fill="#929292" />
+                                    </svg>
+                                </span>2 semaines
+                            </p>
+                        </li>
+                        <li class="none">
+                            <picture>
+                                <img src="Asset/profile1-pag.png" alt="">
+                                <p>Georges Dupont</p>
+                            </picture>
+                            <img src="Asset/paginnation2.png" alt="">
+                            <i class="bi-heart heart"></i>
+                            <p>Changement de look faite par XHair</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>
+                                <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.725807 0.467285C0.324345 0.467285 0 0.802441 0 1.21729C0 1.63213 0.324345 1.96729 0.725807 1.96729V2.2251C0.725807 3.21885 1.10912 4.17275 1.78957 4.87588L3.32737 6.46729L1.78957 8.05869C1.10912 8.76182 0.725807 9.71572 0.725807 10.7095V10.9673C0.324345 10.9673 0 11.3024 0 11.7173C0 12.1321 0.324345 12.4673 0.725807 12.4673H1.45161H7.25807H7.98387C8.38533 12.4673 8.70968 12.1321 8.70968 11.7173C8.70968 11.3024 8.38533 10.9673 7.98387 10.9673V10.7095C7.98387 9.71572 7.60056 8.76182 6.92011 8.05869L5.38231 6.46729L6.92238 4.87588C7.60282 4.17275 7.98614 3.21885 7.98614 2.2251V1.96729C8.3876 1.96729 8.71195 1.63213 8.71195 1.21729C8.71195 0.802441 8.3876 0.467285 7.98614 0.467285H7.25807H1.45161H0.725807ZM2.17742 2.2251V1.96729H6.53226V2.2251C6.53226 2.82275 6.30318 3.39463 5.89491 3.8165L4.35484 5.40557L2.81477 3.81416C2.4065 3.39463 2.17742 2.82041 2.17742 2.2251Z"
+                                            fill="#929292" />
+                                    </svg>
+                                </span>
+                                <span>2 semaines</span>
+                            </p>
+                        </li>
+                        <li id="lastLiMobile">
+                            <picture>
+                                <img src="Asset/profile1-pag.png" alt="">
+                                <p>Georges Dupont</p>
+                            </picture>
+                            <img src="Asset/paginnation3.png" alt="">
+                            <i class="bi-heart heart"></i>
+
+                            <p>Changement de look faite par XHair</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>
+                                <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.725807 0.467285C0.324345 0.467285 0 0.802441 0 1.21729C0 1.63213 0.324345 1.96729 0.725807 1.96729V2.2251C0.725807 3.21885 1.10912 4.17275 1.78957 4.87588L3.32737 6.46729L1.78957 8.05869C1.10912 8.76182 0.725807 9.71572 0.725807 10.7095V10.9673C0.324345 10.9673 0 11.3024 0 11.7173C0 12.1321 0.324345 12.4673 0.725807 12.4673H1.45161H7.25807H7.98387C8.38533 12.4673 8.70968 12.1321 8.70968 11.7173C8.70968 11.3024 8.38533 10.9673 7.98387 10.9673V10.7095C7.98387 9.71572 7.60056 8.76182 6.92011 8.05869L5.38231 6.46729L6.92238 4.87588C7.60282 4.17275 7.98614 3.21885 7.98614 2.2251V1.96729C8.3876 1.96729 8.71195 1.63213 8.71195 1.21729C8.71195 0.802441 8.3876 0.467285 7.98614 0.467285H7.25807H1.45161H0.725807ZM2.17742 2.2251V1.96729H6.53226V2.2251C6.53226 2.82275 6.30318 3.39463 5.89491 3.8165L4.35484 5.40557L2.81477 3.81416C2.4065 3.39463 2.17742 2.82041 2.17742 2.2251Z"
+                                            fill="#929292" />
+                                    </svg>
+                                </span>2 semaines
+                            </p>
+                        </li>
+                        <li class="none">
+                            <picture>
+                                <img src="Asset/profile1-pag.png" alt="">
+                                <p>Georges Dupont</p>
+                            </picture>
+                            <img src="Asset/paginnation.png" alt="">
+                            <i class="bi-heart heart"></i>
+
+                            <p>Changement de look faite par XHair</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>
+                                <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.725807 0.467285C0.324345 0.467285 0 0.802441 0 1.21729C0 1.63213 0.324345 1.96729 0.725807 1.96729V2.2251C0.725807 3.21885 1.10912 4.17275 1.78957 4.87588L3.32737 6.46729L1.78957 8.05869C1.10912 8.76182 0.725807 9.71572 0.725807 10.7095V10.9673C0.324345 10.9673 0 11.3024 0 11.7173C0 12.1321 0.324345 12.4673 0.725807 12.4673H1.45161H7.25807H7.98387C8.38533 12.4673 8.70968 12.1321 8.70968 11.7173C8.70968 11.3024 8.38533 10.9673 7.98387 10.9673V10.7095C7.98387 9.71572 7.60056 8.76182 6.92011 8.05869L5.38231 6.46729L6.92238 4.87588C7.60282 4.17275 7.98614 3.21885 7.98614 2.2251V1.96729C8.3876 1.96729 8.71195 1.63213 8.71195 1.21729C8.71195 0.802441 8.3876 0.467285 7.98614 0.467285H7.25807H1.45161H0.725807ZM2.17742 2.2251V1.96729H6.53226V2.2251C6.53226 2.82275 6.30318 3.39463 5.89491 3.8165L4.35484 5.40557L2.81477 3.81416C2.4065 3.39463 2.17742 2.82041 2.17742 2.2251Z"
+                                            fill="#929292" />
+                                    </svg>
+                                </span>2 semaines
+                            </p>
+                        </li>
+                    </ul>
+                    <picture>
+                        <i class="bi-arrow-right"></i>
+                    </picture>
+                </article>
+            </section>
+        </section>
+        </div>
+        </main>
+
+        <!-- FOOTER -->
+    </div>
+
+    <script src="Javascript/script.js"></script>
+</body>
+
+</html>

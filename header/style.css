@@ -1,0 +1,243 @@
+
+/* TOP HEADER */
+#navDesktop {
+    display: block;
+}
+
+#navMobile {
+    display: none;
+}
+
+nav {
+    background: #fff;
+    padding: 1.2em 3em;
+    box-shadow: 0px 2px 4px 0px #00000026;
+    z-index: 9999;
+}
+
+nav section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4em;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 0.3em;
+
+}
+
+#navTransformationMobile section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 0.3em;
+
+}
+
+nav section article:nth-child(1) img {
+    width: 96.71px;
+    height: 61.47px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+nav section article:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    /* margin-left: 10em; */
+}
+
+.btn-ctp {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 1em;
+    padding: 1.5em 2.5em;
+    font-weight: 700;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.bg2 {
+    background: none;
+    border: 1px solid var(--primary);
+    padding: 1.5em 2.5em;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--primary);
+    border-radius: 1em;
+
+}
+
+#navTransformationMobile {
+    display: none;
+}
+
+nav section article:nth-child(2) picture {
+    display: flex;
+    gap: 1.2em;
+    align-items: center;
+}
+
+nav section article:nth-child(2) picture input {
+    padding: 0.8em;
+    min-width: 30vw;
+    background: none;
+}
+
+nav section article:nth-child(2) picture i {
+    padding: 0.9em;
+    padding-bottom: 0.6em;
+    padding-inline: 0.9em;
+    background: #f5f5f5;
+    border-radius: 0.8em;
+    cursor: pointer;
+    transition: 0.1s;
+    font-style: normal;
+}
+
+nav section article:nth-child(2) picture i span {
+    position: absolute;
+    background: #EE7563;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4.2em;
+    margin-left: 2em;
+    font-size: 0.6em;
+    font-weight: 600;
+    font-family: 'montserrat';
+    border-radius: 50%;
+    color: #fff;
+}
+
+nav section article:nth-child(2) picture i:hover {
+    background: #efefef;
+}
+
+nav section article:nth-child(2) picture i svg {
+    text-align: center;
+    padding: 0.1em;
+}
+
+#Profile img {
+    width: 3.5em;
+    height: 3.5em;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+#headerMobile {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+#pop-show {
+    position: absolute;
+    background: #fff;
+    border-radius: 1em;
+    margin-left: -11em;
+    margin-top: 1em;
+    overflow: hidden;
+    border-top-right-radius: 0.5em;
+    outline: 1px solid #d9d9d9;
+    z-index: 999999999;
+    display: none;
+}
+
+#pop-show div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#pop-show p {
+    padding: 1.3em;
+    cursor: pointer;
+    width: 15em;
+    transition: 0.1s;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    align-items: center;
+
+}
+
+#pop-show p i {
+    padding: 0;
+    background: none;
+}
+
+#pop-show p:hover {
+    background: #d9d9d9;
+
+}
+
+/* HEADER */
+header {
+    /* background: #f5f5f5; */
+    background: #fff;
+    padding: 0 3em;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: left !important;
+    gap: 2em;
+    background: #f5f5f5;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0.5em;
+    overflow-x: hidden;
+}
+
+header section article {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+header section article p {
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+header section article i {
+    font-size: 0.5em;
+    color: #767575;
+}
+
+
+#i-search {
+    display: none;
+}
+@media only screen and (max-width: 930px) {
+    
+    #navTransformation {
+        display: none;
+    }
+
+    #navTransformationMobile {
+        display: block;
+        box-shadow: 0px 2px 4px 0px #00000026 !important;
+        padding: 1.5em 2.5em !important;
+    }
+}
