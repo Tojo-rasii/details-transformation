@@ -1,5 +1,16 @@
 
-
+.ft-m{
+    font-family: 'montserrat';
+}
+.ft-i{
+    font-family: 'inter';
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
 main {
     width: 98.5%;
     margin: 0 auto;
@@ -192,6 +203,11 @@ main {
     border-radius: 1em;
     font-family: 'inter';
     font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+#mois i{
+    margin-bottom: -0.3em;
 }
 
 #figure-located2{
@@ -200,11 +216,11 @@ main {
     align-items: start;
     justify-content: space-between;
     /* background: blue; */
-    padding-bottom: 3em;
+    padding-bottom: 2.5em;
     border-bottom: 1px solid #929292;
-    margin-bottom: 3em;
+    margin-bottom: 2.3em;
     width: 100%;
-    margin-top: 1.5em;
+    margin-top: 2.1em;
     font-family: 'inter';
 }
 
@@ -212,6 +228,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+#rate2 p:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 1.5em;
 }
 #rate2 i{
     color: #F9C66E;
@@ -236,20 +258,20 @@ main {
     gap: 0.5em;
     font-style: normal;
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 
 
 
 #article-texte{
-    /* background: red; */
+    margin-top: 0;
 }
 
 #article-texte picture{
     display: flex;
     flex-direction: column;
-    gap: 1.3em;
+    gap: 1.5em;
 }
 
 #article-texte picture p:nth-child(1){
@@ -401,17 +423,18 @@ main {
 #details-produit{
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.2em;
     font-family: 'inter';
-    margin-top: 2em;
+    margin-top: 2.1em;
 }
 .title-produit p{
     font-family: 'inter';
     font-size: 1.4em;
+    font-weight: 700;
 }
 #details-produit .picture-produit{
     background: #F5F5F5;
-    padding: 1.3em;
+    padding: 1.2em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -426,10 +449,19 @@ main {
 .bold{
     font-weight: 700;
 }
-#details-produit .picture-produit p:last-child{
+#details-produit .link-voir-plus{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-family: 'montserrat';
+    font-weight: 600;
+    align-items: center;
     text-decoration: underline;
     text-underline-offset: 4px;
     color: #EE7563;
+}
+#details-produit .link-voir-plus svg{
+    margin-bottom: -0.2em;
 }
 #maps {
     margin-top: 4.5em;
@@ -452,7 +484,7 @@ position: relative;
 
 
 #title-section2{
-    margin-top: 4.5em !important;
+    margin-top: 3.5em !important;
 }
 
 #title-section2 div{
@@ -580,7 +612,23 @@ position: relative;
     position: relative;
     display: flex;
     flex-direction: column;
+    gap: 0.5em !important;
+}
+
+#text-pagination{
+    display: flex;
+    flex-direction: column;
     gap: 0.5em;
+}
+
+#delai-p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#pro{
+    height: max-content !important;
 }
 
 
