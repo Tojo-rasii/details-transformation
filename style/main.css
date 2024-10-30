@@ -216,7 +216,7 @@ main {
     align-items: start;
     justify-content: space-between;
     /* background: blue; */
-    padding-bottom: 2.5em;
+    padding-bottom: 2.2em;
     border-bottom: 1px solid #929292;
     margin-bottom: 2.3em;
     width: 100%;
@@ -237,7 +237,7 @@ main {
 }
 #rate2 i{
     color: #F9C66E;
-    font-size: 1.5em !important;
+    font-size: 1.8em !important;
 }
 #rate2 i:nth-child(4){
     color: #D9D9D9;
@@ -263,6 +263,9 @@ main {
 
 
 
+#soinBefore::before{
+    content: 'Visage';
+}
 
 #article-texte{
     margin-top: 0;
@@ -335,7 +338,7 @@ main {
     width: max-content;
     display: flex;
     flex-direction: row;
-    gap: 0.5em;
+    gap: 0.4em;
 }
 
 #picture-info-star{
@@ -385,7 +388,7 @@ main {
     flex-direction: row;
     gap: 1em;
     width: 100%;
-    margin-top: 0.5em;
+    margin-top: 0.4em;
 }
 
 #picture-profile-svg div{
@@ -502,7 +505,7 @@ position: relative;
   align-items: center;
   gap: 1em;
   border: 2px solid #EE7563;
-  padding: 1.1em 2.3em;
+  padding: 1.1em 2em;
 }
 
 /* #btn-suggestion button{
@@ -521,7 +524,7 @@ position: relative;
 #paginnation {
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 3em;
     margin-top: 2em;
     margin-bottom: 2em;
     /* background: green; */
@@ -587,6 +590,8 @@ position: relative;
     gap: 1em;
     width: 18em;
     height: 30em;
+    /* background: blue; */
+
 }
 
 .profile-paginnation{
@@ -608,11 +613,10 @@ position: relative;
 
 
 .profile-paginnation-details{
-    /* background: violet; */
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5em !important;
+    gap: 0.8em !important;
 }
 
 #text-pagination{
@@ -649,7 +653,7 @@ position: relative;
     position: absolute;
     background: #00000094;
     color: #fff;
-    top: 12.8em;
+    top: 12.5em;
     left: 17.7%;
     padding: 0.5em 1.1em;
     border-radius: 0.8em;
@@ -675,23 +679,23 @@ position: relative;
 
 .profile-paginnation-details p {
     text-wrap: wrap;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
-.profile-paginnation-details p:nth-child(4) {
-    font-weight: 600 !important;
+.profile-paginnation-details p:nth-child(1) {
+    font-weight: 700 !important;
     text-wrap: wrap;
     font-size: 1.1em !important;
     /* background: green; */
     width: 98%;
 }
 
-.profile-paginnation-details p:nth-child(6) {
+.profile-paginnation-details p:nth-child(3) {
     font-size: 1em;
 }
 
-.profile-paginnation-details p:nth-child(5) {
-    font-size: 0.9em;
+.profile-paginnation-details p:nth-child(2) {
+    font-size: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

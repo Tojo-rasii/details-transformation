@@ -13,6 +13,11 @@
         min-width: 100% !important;
         max-width: 100%;
     } */
+
+    #figure-located2{
+        gap: 2em;
+        flex-wrap: wrap !important;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -83,109 +88,15 @@ scale: 0.9;
         margin: 0 auto;
     }
 
-    input[type="range"] {
-        border-bottom-left-radius: 0 !important;
-        border-bottom-right-radius: 0 !important;
-        position: absolute;
-        left: 0;
-        margin-top: 0.5em !important;
-    }
-
-    main section article:nth-child(1) picture:nth-child(3) {
-        margin-top: 2em !important;
-    }
-
-    main section article:nth-child(1) picture:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-    }
-
-    /* MAIN */
-    /* DROPPING */
-
-   #div-form1 picture {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap !important;
-        gap: 0;
-        row-gap: 3em !important;
-        padding-inline-end:0 !important;
-
-    }
-
-   #div-form1  label:nth-child(1) {
-        min-width: 100%;
-        max-width: 100%;
-        width: 100%;
-    }
-
-   #div-form1  label:nth-child(2) {
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-   #div-form1  label:last-child {
-        width: 100%;
-    }
-
-
-    /* main section article:nth-child(3) form div:nth-child(4) picture:first-child p:nth-child(1) {
-        opacity: 0;
-    }
-
-    main section article:nth-child(3) form div:nth-child(4) picture:last-child p {
-        float: left !important;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
-
-    main section article:nth-child(3) form div:nth-child(5) picture {
-        display: flex;
-        flex-direction: column !important;
-        gap: 2em !important;
-        border-top: none !important;
-        margin-top: -3em !important;
-
-    } */
-
-    .label-span {
-        margin-bottom: 1em !important;
-    }
-
-    #div-form5 picture img{
-        width: 100%;
-        height: 53vh !important;
-     border-radius: 1em;
-     object-fit: cover;
-     }
-
-    #svgDesktop{
-        width: 52vw;
-        height: auto;
-        margin-left: 10em !important;
-margin-bottom: 5em !important;
-display: none;
-          }
-
-
-          #svgMobile{
-            display: none !important;
-            position: absolute;
-            margin-top: -50em;
-            margin-left: 8em;
-    /* margin-top: -48em !important; */
-
-          }
-
 
 
 /* figure located */
 #figure-located{
-    /* background: red; */
     display: block !important;
 }
-
+.i-geo{
+    margin-left: 1.5em;
+}
 .heart svg{
     width: 3em;
     height: 3em;
@@ -205,23 +116,35 @@ display: none;
 #section-columns{
     display: flex;
     flex-direction: column-reverse !important;
-    /* background: red; */
-    gap: 1.5em !important;
+    gap: 1em !important;
 }
 
 #column2{
-    /* background: green; */
   width: 100% !important;
 }
 #details-profile{
   width: 100% !important;
 
 }
+#picture-info-star p:nth-child(2){
+    font-size: 1em !important;
+ }
+#star-rate i{
+    color: #F9C66E;
+    font-size: 1.2em !important;
+}
 
           #title-head{
             display: flex;
             flex-direction: column;
-            gap: 2em;
+            gap: 0.5em !important;
+            background:#fff;
+        }
+
+        #picture-text sub{
+            color: #696969;
+            margin-top: 0 !important;
+            font-size: 1em;
         }
 
 
@@ -232,6 +155,8 @@ display: none;
             justify-content: space-between;
             gap: 0 !important;
             min-width: 90vw !important;
+            margin-top: 0.8em;
+
         }
 
         /* PROFILE STAR MOBILE */
@@ -241,7 +166,7 @@ display: none;
 
         #details-profile{
   border-bottom: none !important;
-            margin-top: 1em;
+            margin-top: 0;
             padding-bottom: 0 !important;
         }
 
@@ -254,7 +179,10 @@ display: none;
     }
 
     #rate2 p:nth-child(1){
-        display: none;
+        display: none !important;
+    }
+    #figure-located2 #rate2 i{
+        font-size: 1.5em !important;
     }
   
     #partage-commentaire{
@@ -262,20 +190,46 @@ display: none;
         flex-direction: row;
         align-items: center;
         gap: 1em !important;
+        margin-top: 0.1em;
+
+    }
+    #partage-commentaire i{
+        display: flex;
+        flex-direction: row;
+        align-items: center !important;
+        gap: 0.4em;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.9em !important;
+    }
+    #partage-commentaire i svg{
+        width: 1.7em !important;
+        height: 1.7em !important;
     }
 
+    /* img */
+    #article-img1 picture div{
+        border-radius: 1em !important;
+       height: 25em;
+       margin-top: -1.5em;
+    }
+
+    #mois{
+        margin: 1em !important;
+        padding: 0.7em 0.8em !important;
+        border-radius: 0.6em !important;
+    }
+
+    #soinBefore::before{
+        content: 'Soins visages' !important;
+    }
 
     #article-texte picture{
         text-align: center;
-        margin-bottom: 2em;
+        margin-bottom: 0;
         border-top: 1px solid #696969;
-        margin-top: 5em;
-        padding-top: 4em;
-    }
-    #paginnation{
-        margin-bottom: 2em;
-        border-top: 1px solid #696969;
-        padding-top: 0;
+        margin-top: 3em;
+        padding-top: 2em;
     }
 
     #article-texte picture p:last-child{
@@ -301,9 +255,12 @@ display: none;
     font-family: 'inter';
     font-size: 1.4em;
 }
+/* #details-produit-mobile{
+    background: red;
+} */
 #details-produit-mobile div .picture-produit{
     background: #F5F5F5;
-    padding: 1.3em;
+    padding: 1.2em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -314,15 +271,38 @@ display: none;
 #details-produit-mobile div .picture-produit p:nth-child(1){
     text-decoration: underline;
     text-underline-offset: 4px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 .bold{
     font-weight: 700;
 }
 #details-produit-mobile div .picture-produit p:last-child{
     text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-family: 'montserrat';
+    font-weight: 600;
+    align-items: center;
+    text-decoration: underline;
     text-underline-offset: 4px;
     color: #EE7563;
+}
+
+#details-produit .link-voir-plus{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-family: 'montserrat';
+    font-weight: 600;
+    align-items: center;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #EE7563;
+}
+#details-produit-mobile .link-voir-plus svg{
+    margin-bottom: -0.2em;
 }
 
 
@@ -341,10 +321,9 @@ display: none;
 
 
 #paginnation article:nth-child(2) ul{
-    justify-content: center !important;
+    justify-content: space-between !important;
     position:  relative !important;
     min-width: auto !important;
-    scale: 1.1;
 }
 
 #paginnation article:nth-child(2) ul li {
@@ -355,6 +334,21 @@ display: none;
 .profile-paginnation-details img {
     height: 18em !important;
 }
+
+/* IMG AU CAS OU */
+/* #paginnation article:nth-child(2) ul{
+    justify-content: space-between !important;
+    position:  relative !important;
+    min-width: 80vw !important;
+    background: red;
+}
+
+
+.img-pag1 {
+    height: 23em !important;
+    min-width: 80vw !important;
+
+} */
 
 #picture-i-left{
     display: block !important;
@@ -371,7 +365,16 @@ display: none;
     margin-top: 2.5em;
 
 }
+#paginnation{
+    margin-bottom: 2em;
+    border-top: 1px solid #696969;
+    padding-top: 0 !important;
+}
 
+
+#paginnation #title-section2{
+    margin-top: 2em !important;
+}
 #paginnation article:nth-child(2) .bi-arrow-left {
     font-size: 1.3em;
     color: #fff;
