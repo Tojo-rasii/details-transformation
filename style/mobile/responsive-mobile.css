@@ -115,7 +115,7 @@ scale: 0.9;
 }
 #section-columns{
     display: flex;
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     gap: 1em !important;
 }
 
@@ -124,7 +124,11 @@ scale: 0.9;
 }
 #details-profile{
   width: 100% !important;
-
+  border-top: 1px solid #696969;
+margin-top: 2em !important;
+padding-top: 2em !important;
+/* padding: 2em; */
+/* background: red; */
 }
 #picture-info-star p:nth-child(2){
     font-size: 1em !important;
@@ -161,7 +165,7 @@ scale: 0.9;
 
         /* PROFILE STAR MOBILE */
         #profile-details{
-            display: none !important;
+            /* display: none !important; */
         }
 
         #details-profile{
@@ -237,7 +241,20 @@ scale: 0.9;
     }
 
     #details-produit, #maps , #btn-suggestion{
-        display: none !important;
+    }
+
+    #maps picture img{
+        width: 100%;
+        height: 23em !important;
+    }
+
+    #maps picture svg{
+        position: absolute;
+        left: 10% !important;
+        margin: 2em !important;
+    }
+    #btn-suggestion{
+        display: none;
     }
 
     
