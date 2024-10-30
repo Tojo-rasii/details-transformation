@@ -209,7 +209,6 @@ display: none;
     gap: 1.5em !important;
 }
 
-
 #column2{
     /* background: green; */
   width: 100% !important;
@@ -345,6 +344,7 @@ display: none;
     justify-content: center !important;
     position:  relative !important;
     min-width: auto !important;
+    scale: 1.1;
 }
 
 #paginnation article:nth-child(2) ul li {
@@ -353,7 +353,6 @@ display: none;
 }
 
 .profile-paginnation-details img {
-    background: red !important;
     height: 18em !important;
 }
 
